@@ -10,6 +10,12 @@ import careConnect from "../assets/project-6.png";
 import todoList from "../assets/project-7.png";
 import himpunan from "../assets/project-8.png";
 import flypal from "../assets/project-9.png";
+import batik from "../assets/project-12.png";
+import compro from "../assets/project-13.png";
+import balirental from "../assets/project-14.png";
+import operationalapp from "../assets/project-15.png";
+import pentes from "../assets/project-16.png";
+
 import ui1 from "../assets/project-10.png";
 import ui2 from "../assets/project-11.png"
 
@@ -97,38 +103,38 @@ const data = {
     },
     {
       id: 12,
-      img: flypal,
+      img: pentes,
       title: "Pentest Analytic Website",
       category: "Web Development",
-      button: "",
+      button: "https://pentest-analysis.vercel.app/",
     },
     {
       id: 13,
-      img: flypal,
+      img: operationalapp,
       title: "Operational App",
       category: "Web Development",
-      button: "",
+      button: "https://manage-operational-app.vercel.app/",
     },
     {
       id: 14,
-      img: flypal,
+      img: batik,
       title: "Kampung Batik",
       category: "Web Development",
-      button: "",
+      button: "https://kampung-batik.vercel.app/",
     },
     {
       id: 15,
-      img: flypal,
+      img: compro,
       title: "Company Profile",
       category: "Web Development",
-      button: "",
+      button: "https://company-profile-4pf6.vercel.app/",
     },
     {
       id: 16,
-      img: flypal,
-      title: "Bali Car Rental",
+      img: balirental,
+      title: "Mooverent : Bali Car Rental",
       category: "Web Development",
-      button: "",
+      button: "https://mooverentbali.com/",
     },
     {
       id: 17,
@@ -143,7 +149,8 @@ const data = {
       img: ui2,
       title: "Redesign : DANA",
       category: "UI/UX",
-      button: "",
+      button:
+        "https://www.figma.com/proto/WwFGy3S9jduz855naLTxrJ/Challenge-Chapter-5-Eta?node-id=138-781&t=9ecDYtPQfFd6RsoQ-0&scaling=min-zoom&content-scaling=fixed&page-id=8%3A5&starting-point-node-id=135%3A695",
     },
   ],
 };

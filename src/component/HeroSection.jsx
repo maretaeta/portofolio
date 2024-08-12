@@ -1,14 +1,15 @@
+/** @format */
 
 import hero from "../assets/img.png";
 
 const Hero = () => {
-   const social_media = [
-     "logo-instagram",
-     "logo-linkedin",
-     "logo-github",
-     "mail-outline",
-   ];
-  
+  const social_media = [
+    { icon: "logo-instagram", link: "https://www.instagram.com/maretaisnaini_" },
+    { icon: "logo-linkedin", link: "https://www.linkedin.com/in/mareta-nur-isnaini" },
+    { icon: "logo-github", link: "https://github.com/maretaeta" },
+    { icon: "mail-outline", link: "mailto:maretanur197@gmail.com" },
+  ];
+
   return (
     <section
       id="home"
@@ -32,13 +33,16 @@ const Hero = () => {
           </h4>
           <button className="btn-primary mt-8">Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">
-            {social_media?.map((icon) => (
-              <div
-                key={icon}
+            {social_media?.map((social) => (
+              <a
+                key={social.icon}
+                href={social.link}
                 className="text-gray-600 hover:text-cyan-800 cursor-pointer"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <ion-icon name={icon}></ion-icon>
-              </div>
+                <ion-icon name={social.icon}></ion-icon>
+              </a>
             ))}
           </div>
         </div>

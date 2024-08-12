@@ -98,5 +98,5 @@ const Sertification = () => {
     </section>
   );
 };
-
+  
 export default Sertification;

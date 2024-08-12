@@ -1,95 +1,134 @@
 /** @format */
 
-const Experiance = () => {
+const Experience = () => {
   return (
-    <div className="min-h-screen flex items-center max-w-7xl mx-auto">
-      <div className="text-black py-8">
-        <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
-          <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
-            <h3 className="text-4xl font-semibold text-cyan-800">Experience</h3>
-            <p className="pt-2 text-gray-500">
-              My experience at this company and bootcamp has provided valuable
-              insights and deep practical skills.
-            </p>
-          </div>
-          <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
-            <div className="container mx-auto w-full h-full">
-              <div className="relative wrap overflow-hidden p-10 h-full">
-                <div
-                  className="border-2-2 border-cyan-900 absolute h-full border"
-                  style={{
-                    right: "50%",
-                    border: "2px solid #FFC100",
-                    borderRadius: "1%",
-                  }}
-                ></div>
-                <div
-                  className="border-2-2 border-cyan-900 absolute h-full border"
-                  style={{
-                    left: "50%",
-                    border: "2px solid #FFC100",
-                    borderRadius: "1%",
-                  }}
-                ></div>
-
-                <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                  <div className="order-1 w-5/12"></div>
-                  <div className="order-1 w-5/12 px-1 py-4 text-right">
-                    <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                      Software Engginer at Widya Robotic
-                    </h4>
-                    <p className="list-disc text-sm md:text-base leading-snug text-slate-400 text-opacity-100">
-                      August - December 2023
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                  <div className="order-1 w-5/12"></div>
-                  <div className="order-1 w-5/12 px-1 py-4 text-left">
-                    <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                      FrontEnd Developer at PT. Blantika Kreasi Muda
-                    </h4>
-                    <p className="text-sm md:text-base leading-snug text-slate-400 text-opacity-100">
-                      March - Juni 2023
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
-                  <div className="order-1 w-5/12"></div>
-                  <div className="order-1 w-5/12 px-1 py-4 text-right">
-                    <h4 className="mb-3 font-bold text-lg md:text-2xl">
-                      Tutor English Program at LBPU UMS
-                    </h4>
-                    <p className="text-sm md:text-base leading-snug text-slate-400 text-opacity-100">
-                      
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mb-8 flex justify-between items-center w-full right-timeline">
-                  <div className="order-1 w-5/12"></div>
-                  <div className="order-1 w-5/12 px-1 py-4">
-                    <h4 className="mb-3 font-bold text-lg md:text-2xl text-left">
-                      Operatinal Staff at PT. Bukaloka Teknologi Indonesia
-                    </h4>
-                    <p className="text-sm md:text-base leading-snug text-slate-400 text-opacity-100">
-                      Jun - September 
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <img
-                className="mx-auto -mt-36 md:-mt-36"
-                src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
-              />
-            </div>
-          </div>
-        </div>
+    <section
+      id="skills"
+      className="pt-40 relative flex flex-row gap-48 items-center justify-center max-w-7xl mx-auto pb-10"
+    >
+      <div className="flex flex-col justify-center items-center mt-8 text-gray-100 text-center w-1/2">
+        <h3 className="text-4xl font-semibold text-cyan-900">Experience</h3>
+        <p className="text-gray-400 my-3">
+          My experience at this company and bootcamp has provided valuable
+          insights and deep practical skills.
+        </p>
       </div>
-    </div>
+      <div className="flex-1">  
+        <ol className="relative border-l border-gray-200">
+          <li className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+              <svg
+                className="w-2.5 h-2.5 text-blue-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+              April 2024 - Now
+            </time>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+              Front End Developer
+            </h3>
+            <p className="mb-4 text-base font-normal text-gray-800">
+              Inpetra ID - Denpasar, Bali
+            </p>
+          </li>
+          <li className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+              <svg
+                className="w-2.5 h-2.5 text-blue-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+              August - December 2023
+            </time>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+              Software Engineer
+            </h3>
+            <p className="mb-4 text-base font-normal text-gray-800">
+              Widya Robotic - Sleman, Yogyakarta
+            </p>
+          </li>
+          <li className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+              <svg
+                className="w-2.5 h-2.5 text-blue-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+              March - June 2023
+            </time>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+              Front End Developer
+            </h3>
+            <p className="mb-4 text-base font-normal text-gray-800">
+              PT. Blantika Kreasi Muda - Tangerang, Jakarta
+            </p>
+          </li>
+          <li className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+              <svg
+                className="w-2.5 h-2.5 text-blue-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+              August 2021 - December 2022
+            </time>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+              Tutor English Program at LBPU UMS
+            </h3>
+            <p className="mb-4 text-base font-normal text-gray-800">
+              LPBIU UMS - Surakarta, Jawa Tengah
+            </p>
+          </li>
+          <li className="mb-10 ml-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white">
+              <svg
+                className="w-2.5 h-2.5 text-blue-800"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <time className="block mb-2 text-sm font-normal leading-none text-gray-400">
+              June - September 2019
+            </time>
+            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900">
+              Operational Staff
+            </h3>
+            <p className="mb-4 text-base font-normal text-gray-800">
+              PT. Bukaloka Teknologi Indonesia - Denpasar, Bali
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
   );
 };
 
-export default Experiance;
+export default Experience;
