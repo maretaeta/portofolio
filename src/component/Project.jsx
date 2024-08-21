@@ -15,9 +15,12 @@ import compro from "../assets/project-13.png";
 import balirental from "../assets/project-14.png";
 import operationalapp from "../assets/project-15.png";
 import pentes from "../assets/project-16.png";
+import shop from "../assets/project-17.png";
 
 import ui1 from "../assets/project-10.png";
 import ui2 from "../assets/project-11.png"
+
+import NoData from "./NoData";
 
 const data = {
   cardData: [
@@ -89,7 +92,7 @@ const data = {
 
     {
       id: 10,
-      img: flypal,
+      img: shop,
       title: "Pershop: Cashier Aplication",
       category: "Web Development",
       button: "",
@@ -184,6 +187,8 @@ const Project = () => {
       : data.cardData.filter((item) => item.category === filter);
   };
 
+  const filteredProjects = filteredData();
+
   return (
     <section id="project" className="pt-40 max-w-7xl mx-auto">
       <div className="text-center">
@@ -191,7 +196,7 @@ const Project = () => {
           Here&#39;s What I&#39;ve been Up To
         </h3>
         <p className="text-gray-400 my-3">
-          various projects, and my latest achievements.
+          Various projects, and my latest achievements.
         </p>
         <div className="flex justify-center gap-4 mt-12">
           <button
@@ -233,45 +238,52 @@ const Project = () => {
         </div>
       </div>
       <div className="flex mx-auto justify-between mt-10">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 pt-2 gap-10 items-center">
-          {filteredData()
-            .slice(0, count)
-            .map((item, index) => (
-              <div
-                className="max-w-[1240px] border border-gray-200 rounded-lg shadow overflow-hidden"
-                key={index}
-              >
-                <a href="#">
-                  <img className="rounded-t-lg" src={item.img} alt="" />
-                </a>
-                <div className="p-5">
+        {filteredProjects.length > 0 ? (
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 pt-2 gap-10 items-center">
+            {filteredProjects
+              .slice(0, count)
+              .map((item, index) => (
+                <div
+                  className="max-w-[1240px] border border-gray-200 rounded-lg shadow overflow-hidden"
+                  key={index}
+                >
                   <a href="#">
-                    <h3 className="mb-2 text-lg my-4">{item.title}</h3>
+                    <img className="rounded-t-lg" src={item.img} alt="" />
                   </a>
-                  <div className="flex gap-3 justify-end">
-                    <a
-                      href={item.button}
-                      target="_blank"
-                      className="text-white text-sm bg-cyan-800 px-4 py-1 inline-block rounded-xl"
-                    >
-                      View
+                  <div className="p-5">
+                    <a href="#">
+                      <h3 className="mb-2 text-lg my-4">{item.title}</h3>
                     </a>
+                    <div className="flex gap-3 justify-end">
+                      <a
+                        href={item.button}
+                        target="_blank"
+                        className="text-white text-sm bg-cyan-800 px-4 py-1 inline-block rounded-xl"
+                      >
+                        View
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
-        </div>
+              ))}
+          </div>
+        ) : (
+          <NoData />
+        )}
       </div>
       <div className="pt-10">
-        <button
-          className="btn-more py-3 px-10 grid justify-items-center mx-auto"
-          onClick={loadMore}
-        >
-          {showMore ? "Load More" : "Less More"}
-        </button>
+        {filteredProjects.length > 3 && (
+          <button
+            className="btn-more py-3 px-10 grid justify-items-center mx-auto"
+            onClick={loadMore}
+          >
+            {showMore ? "Load More" : "Less More"}
+          </button>
+        )}
       </div>
     </section>
   );
 };
 
 export default Project;
+      

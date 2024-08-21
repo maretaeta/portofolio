@@ -12,6 +12,8 @@ import {
   FaDatabase,
   FaFigma,
   FaBootstrap,
+  FaTrello, 
+  FaMicrosoft, 
 } from "react-icons/fa";
 import {
   SiNestjs,
@@ -19,6 +21,8 @@ import {
   SiPrisma,
   SiPostman,
   SiXampp,
+  SiNotion, 
+  SiClickup,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -47,7 +51,7 @@ const Skills = () => {
           { Icon: SiPrisma, label: "Prisma ORM", color: "text-cyan-900" },
           { Icon: FaPhp, label: "PHP", color: "text-blue-700" },
           { Icon: SiTailwindcss, label: "Tailwind", color: "text-teal-400" },
-          { Icon: FaBootstrap, label: "Bootsrap", color: "text-purple-500" },
+          { Icon: FaBootstrap, label: "Bootstrap", color: "text-purple-500" },
           { Icon: FaDatabase, label: "SQL", color: "text-gray-800" },
           { Icon: VscVscode, label: "VSCode", color: "text-cyan-700" },
           { Icon: FaGithub, label: "GitHub", color: "text-gray-800" },
@@ -59,6 +63,10 @@ const Skills = () => {
             color: "text-cyan-900",
           },
           { Icon: SiXampp, label: "XAMPP", color: "text-orange-600" },
+          { Icon: SiNotion, label: "Notion", color: "text-black" }, 
+          { Icon: FaTrello, label: "Trello", color: "text-blue-500" }, 
+          { Icon: SiClickup, label: "ClickUp", color: "text-purple-700" }, 
+          { Icon: FaMicrosoft, label: "Microsoft", color: "text-blue-600" }, 
         ].map(({ Icon, label, color }, index) => (
           <div
             key={index}

@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+
 import sertif1 from "../assets/sertif-1.jpg";
 import sertif2 from "../assets/sertif-2.jpg";
 import sertif3 from "../assets/sertif-3.jpg";
@@ -29,11 +30,11 @@ const Sertification = () => {
       img: sertif5,
       title: "English Tutor at UMS",
     },
-    {
-      id: 4,
-      img: sertif1,
-      title: "Product Manager and UI/UX Student at Binar Academy",
-    },
+    // {
+    //   id: 4,
+    //   img: sertif1,
+    //   title: "Product Manager and UI/UX Student at Binar Academy",
+    // },
     {
       id: 5,
       img: sertif1,
@@ -53,12 +54,17 @@ const Sertification = () => {
 
   return (
     <section id="project" className="pt-40 max-w-7xl mx-auto">
-      <div className="text-center">
+      <div className="items-center text-center flex flex-col justify-center">
         <h3 className="text-4xl font-semibold text-cyan-800">Sertification</h3>
-        <p></p>
+        <p className="text-gray-400 my-3 w-1/2 text-center">
+          These achievements and certifications that I have earned are proof of
+          my commitment in continuously learning and adapting to industry
+          developments.
+        </p>
       </div>
-      <div className="relative mt-10 ">
+      <div className="relative mt-10">
         <Swiper
+          // modules={[Navigation]}
           spaceBetween={25}
           loop={true}
           pagination={{ clickable: true }}
@@ -71,11 +77,11 @@ const Sertification = () => {
             prevEl: ".swiper-button-prev",
           }}
           slidesPerView={3}
-          className=" max-w-6xl"
+          className="max-w-6xl"
         >
           {data.map((item) => (
             <SwiperSlide key={item.id} className="flex justify-center">
-              <div className="border border-gray-200 rounded-lg shadow overflow-hidden">
+              <div className="border border-gray-200 rounded-lg shadow overflow-hidden h-96">
                 <a href="#">
                   <img
                     className="w-full h-auto rounded-t-lg"
@@ -92,11 +98,11 @@ const Sertification = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <button className="swiper-button-prev absolute top-1/2 left10 transform -translate-y-1/2 font-extrabold text-cyan-600 z-10"></button>
-        <button className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2 font-extrabold text-cyan-600 z-10"></button>
+        {/* <button className="swiper-button-prev absolute top-1/2 left-10 transform -translate-y-1/2 font-extrabold text-cyan-600 z-10"></button>
+        <button className="swiper-button-next absolute top-1/2 right-0 transform -translate-y-1/2 font-extrabold text-cyan-600 z-10"></button> */}
       </div>
     </section>
   );
 };
-  
+
 export default Sertification;
