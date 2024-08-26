@@ -1,5 +1,5 @@
 
-import aboutImg from "../assets/img.png";
+import aboutImg from "../assets/img2.png";
 
 const About = () => {
   const info = [
@@ -40,7 +40,7 @@ const About = () => {
 
 
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
-            <div className="lg:w-96 h-full relative sm:w-10/12 w-11/12 md:w-11/12 max-w-sm aboutImg">
+            <div className="lg:w-80 h-full relative sm:w-10/12 w-11/12 md:w-11/12 max-w-sm aboutImg">
               <img
                 src={aboutImg}
                 alt=""
