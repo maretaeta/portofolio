@@ -4,8 +4,18 @@
 
 const Hero = () => {
   const social_media = [
-    { icon: "logo-instagram", link: "https://www.instagram.com/maretaisnaini_" },
-    { icon: "logo-linkedin", link: "https://www.linkedin.com/in/mareta-nur-isnaini" },
+    {
+      icon: "logo-whatsapp",
+      link: "https://wa.me/+628968547709",
+    },
+    {
+      icon: "logo-instagram",
+      link: "https://www.instagram.com/maretaisnaini_",
+    },
+    {
+      icon: "logo-linkedin",
+      link: "https://www.linkedin.com/in/mareta-nur-isnaini",
+    },
     { icon: "logo-github", link: "https://github.com/maretaeta" },
     { icon: "mail-outline", link: "mailto:maretanur197@gmail.com" },
   ];
@@ -28,8 +38,7 @@ const Hero = () => {
             I&#39;m <span>Mareta Nur Isnaini</span>
           </h1>
           <h4 className="md:text-lg text-md md:leading-normal leading-5 mt-4 font-bold text-gray-400">
-            Im Interested in Front End Developer, Web Developer, Quality
-            Assurance and Product Manager
+            Im Interested in Front End Developer and Product Management
           </h4>
           <button className="btn-primary mt-8">Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">

@@ -7,7 +7,7 @@ const experiences = [
     company: "Inpetra ID - Denpasar, Bali",
   },
   {
-    date: "March 2024- Now",
+    date: "March - August 2024",
     title: "Product Management and UI/UX Design Student",
     company: "Binar Academy - Online",
   },

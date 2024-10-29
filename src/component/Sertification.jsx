@@ -5,36 +5,37 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-
 import sertif1 from "../assets/sertif-1.jpg";
 import sertif2 from "../assets/sertif-2.jpg";
 import sertif3 from "../assets/sertif-3.jpg";
 import sertif4 from "../assets/sertif-4.jpg";
 import sertif5 from "../assets/sertif-5.jpeg";
 import sertif6 from "../assets/sertif-6.png";
+import sertif7 from "../assets/sertif-7.jpg";
 
 const Sertification = () => {
   const data = [
     {
       id: 1,
+      img: sertif7,
+      title: "Product Manager and UI/UX Student at Binar Academy",
+    },
+    {
+      id: 2,
       img: sertif4,
       title: "Software Engineer at Widya Robotic",
     },
     {
-      id: 2,
+      id: 3,
       img: sertif6,
       title: "Front End Developer at PT. Blantika Kreasi Muda",
     },
     {
-      id: 3,
+      id: 4,
       img: sertif5,
       title: "English Tutor at UMS",
     },
-    // {
-    //   id: 4,
-    //   img: sertif1,
-    //   title: "Product Manager and UI/UX Student at Binar Academy",
-    // },
+
     {
       id: 5,
       img: sertif1,

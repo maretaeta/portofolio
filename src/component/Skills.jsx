@@ -13,7 +13,8 @@ import {
   FaFigma,
   FaBootstrap,
   FaTrello, 
-  FaMicrosoft, 
+  FaMicrosoft,
+  FaGoogle, 
 } from "react-icons/fa";
 import {
   SiNestjs,
@@ -24,7 +25,6 @@ import {
   SiNotion, 
   SiClickup,
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 const Skills = () => {
@@ -41,6 +41,13 @@ const Skills = () => {
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-14 mt-8 text-gray-100 text-center">
         {[
+          { Icon: FaGoogle, label: "Google Suite", color: "text-black" },
+          { Icon: FaTrello, label: "Trello", color: "text-blue-500" },
+          { Icon: SiClickup, label: "ClickUp", color: "text-purple-700" },
+          { Icon: SiNotion, label: "Notion", color: "text-black" },
+
+          { Icon: FaMicrosoft, label: "Microsoft", color: "text-blue-600" },
+          { Icon: FaFigma, label: "Figma", color: "text-gray-800" },
           { Icon: FaHtml5, label: "HTML", color: "text-orange-600" },
           { Icon: FaCss3Alt, label: "CSS", color: "text-blue-400" },
           { Icon: FaJsSquare, label: "JavaScript", color: "text-yellow-400" },
@@ -53,9 +60,9 @@ const Skills = () => {
           { Icon: SiTailwindcss, label: "Tailwind", color: "text-teal-400" },
           { Icon: FaBootstrap, label: "Bootstrap", color: "text-purple-500" },
           { Icon: FaDatabase, label: "SQL", color: "text-gray-800" },
-          { Icon: VscVscode, label: "VSCode", color: "text-cyan-700" },
+
           { Icon: FaGithub, label: "GitHub", color: "text-gray-800" },
-          { Icon: FaFigma, label: "Figma", color: "text-gray-800" },
+
           { Icon: SiPostman, label: "Postman", color: "text-orange-600" },
           {
             Icon: BiLogoPostgresql,
@@ -63,10 +70,6 @@ const Skills = () => {
             color: "text-cyan-900",
           },
           { Icon: SiXampp, label: "XAMPP", color: "text-orange-600" },
-          { Icon: SiNotion, label: "Notion", color: "text-black" }, 
-          { Icon: FaTrello, label: "Trello", color: "text-blue-500" }, 
-          { Icon: SiClickup, label: "ClickUp", color: "text-purple-700" }, 
-          { Icon: FaMicrosoft, label: "Microsoft", color: "text-blue-600" }, 
         ].map(({ Icon, label, color }, index) => (
           <div
             key={index}
