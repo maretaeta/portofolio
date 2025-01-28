@@ -38,7 +38,7 @@ const Hero = () => {
             I&#39;m <span>Mareta Nur Isnaini</span>
           </h1>
           <h4 className="md:text-lg text-md md:leading-normal leading-5 mt-4 font-bold text-gray-400">
-            Im Interested in Front End Developer and Product Management
+            Im Interested in Project Manager and Front End Developer
           </h4>
           <button className="btn-primary mt-8">Contact Me</button>
           <div className="mt-8 text-3xl flex items-center md:justify-start justify-center gap-5">

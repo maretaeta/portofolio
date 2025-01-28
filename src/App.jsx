@@ -7,9 +7,9 @@ import Bot from "./component/Bot";
 import About from "./component/About";
 import Skills from "./component/Skills";
 import Project from "./component/Project";
-import Sertification from "./component/Sertification";
+// import Sertification from "./component/Sertification";
 import Footer from "./component/Footer";
-import Experiance from "./component/Experiance";
+// import Experiance from "./component/Experiance";
 
 function App() {
   return (
@@ -20,8 +20,8 @@ function App() {
       <About />
       <Skills />
       <Project />
-      <Sertification />
-      <Experiance />
+      {/* <Sertification /> */}
+      {/* <Experiance /> */}
       <Footer />
     </div>
   );

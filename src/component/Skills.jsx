@@ -22,8 +22,9 @@ import {
   SiPrisma,
   SiPostman,
   SiXampp,
-  SiNotion, 
+  SiNotion,
   SiClickup,
+  SiJira,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 
@@ -42,10 +43,11 @@ const Skills = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-14 mt-8 text-gray-100 text-center">
         {[
           { Icon: FaGoogle, label: "Google Suite", color: "text-black" },
+          { Icon: SiJira, label: "Jira", color: "text-blue-700" },
           { Icon: FaTrello, label: "Trello", color: "text-blue-500" },
           { Icon: SiClickup, label: "ClickUp", color: "text-purple-700" },
           { Icon: SiNotion, label: "Notion", color: "text-black" },
-
+          
           { Icon: FaMicrosoft, label: "Microsoft", color: "text-blue-600" },
           { Icon: FaFigma, label: "Figma", color: "text-gray-800" },
           { Icon: FaHtml5, label: "HTML", color: "text-orange-600" },

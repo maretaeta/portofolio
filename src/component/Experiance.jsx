@@ -2,6 +2,11 @@
 
 const experiences = [
   {
+    date: "November 2024 - Now",
+    title: "Junior Project Manager",
+    company: "Refactory - Sleman, Yogyakarta",
+  },
+  {
     date: "April - August 2024",
     title: "Front End Developer",
     company: "Inpetra ID - Denpasar, Bali",

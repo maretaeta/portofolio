@@ -320,7 +320,7 @@ const Project = () => {
   const filteredProjects = filteredData();
 
   return (
-    <section id="project" className="pt-40 max-w-7xl mx-auto">
+    <section id="project" className="pt-40 max-w-7xl mx-auto pb-36">
       <div className="text-center">
         <h3 className="text-4xl font-semibold text-cyan-800">
           Here&#39;s What I&#39;ve been Up To
@@ -422,7 +422,7 @@ const Project = () => {
       <div className="pt-10">
         {filteredProjects.length > 3 && (
           <button
-            className="btn-more py-3 px-10 grid justify-items-center mx-auto"
+            className="btn-more py-3 px-10 grid justify-items-center mx-auto bg-cyan-700 text-white rounded-full"
             onClick={loadMore}
           >
             {showMore ? "Load More" : "Show Less"}
