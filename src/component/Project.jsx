@@ -20,6 +20,8 @@ import ui1 from "../assets/project-10.png";
 import ui2 from "../assets/project-11.png";
 import pm1 from "../assets/pm1.png";
 import pm2 from "../assets/pm2.png";
+import pm3 from "../assets/project-18.png";
+
 
 import NoData from "./NoData";
 
@@ -43,6 +45,7 @@ import {
   SiNestjs,
   SiTypescript,
   SiPrisma,
+  SiJira,
 } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
 
@@ -261,6 +264,14 @@ const data = {
       ],
     },
     {
+      id: 21,
+      img: pm3,
+      title: "Cellcast - Broadcasting App",
+      category: "ProjectManagement",
+      button: "",
+      logos: [<FaGoogle key="Google Suite" />, <SiJira key="Jira" />],
+    },
+    {
       id: 19,
       img: pm1,
       title: "Finsera - Banking App",
@@ -278,7 +289,8 @@ const data = {
       img: pm2,
       title: "Research and Analysis Dana App",
       category: "ProjectManagement",
-      button: "https://docs.google.com/presentation/d/1br6X8K4gOxzQLj50c2gNPNS_odKSWsTuiPcbjy-RxyA/edit?usp=sharing",
+      button:
+        "https://docs.google.com/presentation/d/1br6X8K4gOxzQLj50c2gNPNS_odKSWsTuiPcbjy-RxyA/edit?usp=sharing",
       logos: [
         <FaGoogle key="Google Suite" />,
         <SiClickup key="Clickup" />,
